@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+!-- Heading division -->
+  
+  <div>
+    <h1 class="text-center">Student Enrollment Form</h1>
+  </div>
+
+!-- Main content division -->
+
+  <div class="row">
+
+    !-- Input Entries -->
+
+    <div class="InputEntries container col-sm-5">
+      <form class="mt-5" action="#" id="InputEntries">
+        <label class="Label" for="name">Name</label>
+        <input class="Input" type="text" id="name" name="name"><br /><br />
+
+        <label class="Label" for="email">E-Mail</label>
+        <input class="Input" id="email" name="email" type="email"><br /><br />
+        <label class="Label" for="website">Website</label>
+        <input class="Input" type="url" id="website" name="Website"><br><br />
+
+        <label class="Label" for="imageLink">Image Link</label>
+        <input class="Input" type="url" id="imageLink" name="imageLink"><br><br />
+
+        <label class="Label" for="gender">Gender</label>
+        <div class="Input">
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        </div>
+       
+        <br /><br /> <br/>
+        <label class="Label" for="skills">Skills</label>
+        <div class="Input">
+        <input type="checkbox" id="skill1" name="skill" value="Java">
+        <label for="skill1"> Java</label>
+        <input type="checkbox" id="skill2" name="skill" value="HTML">
+        <label for="skill2"> HTML</label>
+        <input type="checkbox" id="skill3" name="skill" value="CSS">
+        <label for="skill3"> CSS</label>
+        </div>
+        <br><br>
+        <button class="btn btn-primary ml-2 id="btnAddData" type="button" id='btnAddData' onclick="AddData()">Enroll Student</button>
+        <button class="btn btn-danger" type="button" onclick="ResetForm()">Clear</button>
+      </form>
+    </div>
+
+    !-- Seperating lines -->
+
+        <div class="col-sm-1 v1" id = fadeshow></div>
+
+        !-- Table division -->
+
+
+        <div class="col-sm-5 tableFixHead mt-3">
+          <h2 class="text-center">Enrolled Students</h2>
+          <table id = "list" class="tableS mt-3 fixed table" border="2">
+            <thead>
+              <tr>
+                <th>Description</th>
+                <th>Image</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+  </div>
+
+  !--Copyright division -->
+
+  <div>
+    <h5 class="text-center fixed-bottom">Copyright 2020-2021 by Fresher Training</h4>
+  </div>
+
+  <script src="script.js"></script>
+
+  </body>
+</html>
